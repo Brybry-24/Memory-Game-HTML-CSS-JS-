@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPlay Audio</title>
+</head>
+<body>
+
+<script>
+  // Function to play audio
+  function playAudio(audioFile) {
+    const audio = new Audio(audioFile);
+    audio.play();
+  }
+
+  // Automatically play audio after some time
+  const delayInSeconds = 3000; // Adjust the delay as needed
+  setTimeout(() => {
+    playAudio('lose.mp3'); // Replace 'lose.mp3' with your audio file path
+  }, delayInSeconds);
+</script>
+
+</body>
+</html>

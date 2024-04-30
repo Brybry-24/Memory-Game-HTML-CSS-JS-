@@ -1,0 +1,35 @@
+<style>
+ @keyframes changeText {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.text-animation {
+  animation: changeText 6s infinite; /* Adjust the duration and iteration as needed */
+}
+
+.text-animation p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.text-animation p:nth-child(1) {
+  animation-delay: 0s; /* Delay for the first text */
+}
+
+.text-animation p:nth-child(2) {
+  animation-delay: 3s; /* Delay for the second text, adjust as needed */
+}
+
+</style>
+
+<div class="text-animation">
+  <p>This is the first text</p>
+  <p>This is the second text</p>
+</div>

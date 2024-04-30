@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>o(〒﹏〒)o</title>
+  
+<style>
+    * {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  transition: background 0.4s ease-in;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
+    /* background-image:  linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+    
+    background-image: url("2641047.gif");
+    
+}
+input[type=radio] {
+  display: none;
+}
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+ 
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 400px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 20px;
+  
+}img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* .cardsimg ver{
+  transform: scale(1.3);
+} */
+
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+ 
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  
+
+}
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+}
+#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.hoover:hover{
+  animation: tilt-n-move-shaking .50s infinite;
+  
+
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+.download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .claim {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 40px;
+        margin-left: 120px;
+        color: #ffcc00; /* Yellow color */
+    
+        text-shadow: 2px 2px 0px #000, 
+                     4px 4px 0px #000,
+                     6px 6px 0px #000;
+        animation: lghtt 2s ease infinite alternate;
+    }
+
+    .claim:hover{
+      transform: scale(1.1);
+    }
+
+    @keyframes lghtt {
+    /* from { opacity: 1; }  
+    to { opacity: 0; } */
+    0%{
+      color: #ffcc00;
+    }
+   
+    50% {
+      color: #eeff00;
+    }
+    
+    100% {
+      color: #e5ff00;
+    }
+  }
+
+    /* CSS */
+.button-57 {
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ff00c8;
+  border-radius: 10px;
+  color: #ff39f5;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 40px;
+  padding: 7px 70px 7px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 115px;
+  margin-top: 15px;
+  background: #fff;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  font-family: 'Press Start 2P', cursive;
+  color: #e5ff00;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 80%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 30px;
+  line-height: 25px;
+
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(234, 6, 255);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+
+
+</style>
+</head>
+<body>
+ 
+  <div class="container">
+    <input type="radio" name="slider" id="item-1">
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3" checked>
+    <div class="cards">
+      <label for="item-3" id="song-3" class="card">
+        <h1 class="claim">You Lose :C</h1>
+        <video autoplay loop controls muted  width="500" height="230" src="lose.mp4" ></video>
+        <a href="file:///C:/Users/Bry/Desktop/bebi%20b-day/game.html" class="button-57" role="button">
+          <span class="text">Try again?</span><span>Try again?</span>
+        </a>
+      </label>
+    </div>
+  </div>
+ 
+  
+  <!-- <video autoplay loop controls muted  width="560" height="215" src="videooo.mp4" style="box-shadow: rgba(255, 0, 221, 0.4) 0px 5px, rgba(255, 0, 221, 0.3) 0px 10px, rgba(204, 0, 255, 0.2) 0px 15px, rgba(0, 0, 255, 0.1) 0px 20px, rgba(0, 0, 255, 0.05) 0px 25px;"></video> -->
+
+</body>
+
+
+</html>
+
+
+  

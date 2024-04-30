@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ε=ε=┌( >_<)┘</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">\
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="loading">
+          <div class="text" id="loadingText" >Weyt lng</div>
+          <div class="bounceball"></div>
+          <div class="bounceball"></div>
+          <div class="bounceball"></div>
+        </div>
+      </div>
+      <script>
+
+        // Function to change the loading text
+  function changeLoadingText() {
+    var loadingText = document.getElementById('loadingText');
+    var texts = ['Hayss', 'Zzzzzz', 'mwamwa bebi']; // Add more text options as needed
+    var currentIndex = 0;
+    
+    // Function to change text every 2 seconds
+    setInterval(function() {
+      loadingText.textContent = texts[currentIndex];
+      currentIndex = (currentIndex + 1) % texts.length;
+    }, 2000); // Change text every 2 seconds
+  }
+  
+  // Call the function when the page loads
+  window.onload = changeLoadingText;
+        // Set timeout for 7 seconds
+        setTimeout(function(){
+          // Redirect to the new page
+          window.location.href = 'file:///C:/Users/Bry/Desktop/bebi%20b-day/greet.html';
+        }, 7500); // 7 seconds in milliseconds
+      </script>
+</body>
+</html>

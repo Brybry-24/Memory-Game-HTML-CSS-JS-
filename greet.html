@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="greet.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="pi.png">
+    <title>Pibertday :)</title>
+</head>
+
+
+<body>
+
+
+<div class="birthdayCard">
+    <div class="cardFront">
+        <div class="front-text">
+            <h3 class="happy">HAPPY</h3>
+            <h3 class=" bday">BIRTHDAY</h3>
+            <h4 class="toyou">Bebi!</h4>
+            <h6 class="kiss">(っ˘з(˘⌣˘ ) ♡</h6> 
+        </div>
+            <div class="wrap-deco">
+                <div class="decorations"></div>
+                <div class="decorationsTwo"></div>
+            </div>
+            <div class="wrap-decoTwo">
+                <div class="decorations"></div>
+                <div class="decorationsThree"></div>
+            </div>
+            <div class="plate">
+                <!-- <img class="plateImg" src="kirby.jpg" alt="Description of your image"> -->
+                <div class="cake"></div>
+                <div class="flame"></div>
+            </div>
+        </div> 
+        <div class="cardInside">
+            <div class="inside-text">
+            <h3 class="happy">HAPPY</h3>
+            <h2 class=" bday">BIRTHDAY</h2>
+            <h3 class="toyou">bebi!</h3>
+            </div>
+            <div class="wishes">
+            <p>Hallo bebi,</p>
+            <p> Happy birthday sayo!
+                Salamat at dumating ka sa buhay ko. 
+                Always remember palaging ako nandito, mahal na mahal kita.
+                ayun lng kasi maliit tong space dikakasya yung long message haha. Happy Birthday Bebi
+                Enjoy your day, I love you! ♡ </p>
+                <p class="name">Xiashimi</p>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+    
+        <img src="play.png" id="icon">
+        <p class="ch">Click Here</p>
+           
+       </div>
+ 
+    <div class="audio">
+        <audio id="mySong" src="happy.mp3" type></audio>
+
+    </div>
+
+    <script>
+         document.body.style.zoom = "100%";
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        
+        
+        icon.onclick= function(){
+            
+       if (mySong.paused) {
+
+        mySong.play();
+        icon.src = "pause.png";
+    }
+         else{
+            
+            mySong.pause();
+            icon.src = "play.png";
+         }
+       
+        }
+               
+    </script>
+   </body>
+   </html>
