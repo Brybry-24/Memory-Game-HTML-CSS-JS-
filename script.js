@@ -115,7 +115,7 @@ const startGame = () => {
   const startSound = new Audio('UsadaPekoraBGM8BIT.mp3'); // Replace 'background_music.mp3' with the path to your audio file
     //   audio.loop = true; // Loop the audio
       startSound.play();
-      // startSound.volume = 0.5; 
+      startSound.volume = 1.0; 
 
     state.loop = setInterval(() => {
         state.totalTime++
@@ -190,7 +190,7 @@ const flipCard = card => {
             clearInterval(state.loop);
         }, 500);
         const losingSound = new Audio('win.mp3'); // Replace 'losing.mp3' with the path to your losing sound effect
-        // losingSound.volume = 0.5;
+        losingSound.volume = 0.5;
         losingSound.play(); 
     }
 };
