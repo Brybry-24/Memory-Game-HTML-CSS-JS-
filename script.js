@@ -183,14 +183,14 @@ const flipCard = card => {
                        color: #e5ff00; 
                        text-shadow: 2px 2px 0px #ff00c8, 3px 3px 0px #000;
                        cursor: pointer;"> Yey Bebi! ٩(๑･ิᴗ･ิ)۶</p> <br />   
-                    <a  class="button-57" href="file:///C:/Users/Bry/Desktop/bebi%20b-day/prizeload.html">
+                    <a  class="button-57" href="/prizeload.html">
                     <span class="text">???</span><span>Reveal now?</span></a>
                 </span>
             `;
             clearInterval(state.loop);
         }, 500);
         const losingSound = new Audio('win.mp3'); // Replace 'losing.mp3' with the path to your losing sound effect
-        losingSound.volume = 0.5;
+        losingSound.volume = 1.0;
         losingSound.play(); 
     }
 };
