@@ -124,7 +124,7 @@ const startGame = () => {
         selectors.timer.innerText = `Time: ${state.totalTime} sec`
         
         // Check if 25 seconds have elapsed
-        if (state.totalTime >= 20) {
+        if (state.totalTime >= 40) {
             clearInterval(state.loop); // Stop the timer
             // Redirect the page after 25 seconds
             const losingSound = new Audio('lose.mp3'); // Replace 'losing.mp3' with the path to your losing sound effect
